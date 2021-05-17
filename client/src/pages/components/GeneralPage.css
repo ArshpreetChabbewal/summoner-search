@@ -1,0 +1,333 @@
+.generalPage {
+    color: white;
+}
+
+.generalPage__rowOne {
+    display: flex;
+}
+
+.generalPage__rowTwo {
+    display: flex;
+}
+
+.generalPage__rowThree {
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.generalPage__rankedOverview {
+    background: linear-gradient(0deg, rgb(0, 0, 0), transparent);
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+    padding: 20px;
+    padding-right: 30px;
+    padding-top: 10px;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.generalPage__rankedOverview:hover {
+    background: linear-gradient(0deg, rgb(122, 42, 197), transparent);
+}
+
+.generalPage__rankedSoloOverview {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.generalPage__rankedSoloContents {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.generalPage__rankedSoloContents > img {
+    width: 100px;
+    height: 100px;
+}
+
+.generalPage__rankedSoloText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}  
+
+.generalPage__rankedSoloText > h5 {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.generalPage__rankedFlexOverview {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.generalPage__rankedFlexContents {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.generalPage__rankedFlexContents > img {
+    width: 100px;
+    height: 100px;
+}
+
+.generalPage__rankedFlexText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}  
+
+.generalPage__rankedFlexText > h5 {
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.generalPage__champions {
+    margin-left: 7%;
+    margin-top: 20px;
+    width: 50%;
+    background: linear-gradient(0deg, rgb(0, 0, 0), transparent);
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.generalPage__champions:hover {
+    background: linear-gradient(0deg, rgb(122, 42, 197), transparent);
+}
+
+.generalPage__champions > h2 {
+    margin-top: 40px;
+    margin-left: 10%;
+    color: white;
+    font-size: 40px;
+}
+
+.generalPage__championOverview {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.generalPage__championThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.generalPage__championTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.generalPage__championOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.generalPage__championThree > img {
+    display: flex;
+    clip-path: circle();
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    transition: 0.2s;
+}
+
+.generalPage__championTwo > img {
+    display: flex;
+    clip-path: circle();
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    transition: 0.2s;
+}
+
+.generalPage__championOne > img {
+    display: flex;
+    clip-path: circle();
+    width: 120px;
+    height: 120px;
+    transition: 0.2s;
+}
+
+.generalPage__championThree > img:hover {
+    transform: scale(1.08);
+}
+
+.generalPage__championTwo > img:hover {
+    transform: scale(1.08);
+}
+
+.generalPage__championOne > img:hover {
+    transform: scale(1.08);
+}
+
+.generalPage__championThree > h6 {
+    color: white;
+    font-size: 20px;
+}
+
+.generalPage__championTwo > h6 {
+    color: white;
+    font-size: 20px;
+}
+
+.generalPage__championOne > h6 {
+    color: white;
+    font-size: 20px;
+}
+
+.generalPage__rankedSolo {
+    margin-top: 100px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.generalPage__rankedSoloPercent {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 200px;
+    display: flex;
+}
+
+svg {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    z-index: 100;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: red;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+    stroke: #00ff43;
+}
+
+.generalPage__rankedSoloWinrate {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalPage__rankedSoloWinrate > h4 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.generalPage__rankedSoloWinrate h4 span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.generalPage__rankedSoloGraph > h5 {
+    margin-top: 230px;
+}
+
+.generalPage__rankedSoloPositions {
+    margin-left: 25%;
+}
+
+.generalPage__rankedSoloTopHeader {
+    display: flex;
+    margin-top: 10px;
+}
+
+.generalPage__rankedSoloJungleHeader {
+    display: flex;
+    margin-top: 60px;
+}
+
+.generalPage__rankedSoloMidHeader {
+    display: flex;
+    margin-top: 60px;
+}
+
+.generalPage__rankedSoloBotHeader {
+    display: flex;
+    margin-top: 60px;
+}
+
+.generalPage__rankedSoloSupportHeader {
+    display: flex;
+    margin-top: 60px;
+}
+
+.generalPage__rankedSoloTopHeader > img {
+    width: 80px;
+    height: 80px;
+}
+
+.generalPage__rankedSoloJungleHeader > img {
+    width: 80px;
+    height: 80px;
+}
+
+.generalPage__rankedSoloMidHeader > img {
+    width: 80px;
+    height: 80px;
+}
+
+.generalPage__rankedSoloBotHeader > img {
+    width: 80px;
+    height: 80px;
+}
+
+.generalPage__rankedSoloSupportHeader > img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.generalPage__rankedFlex {
+    margin-top: 150px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.generalPage__draftPick {
+    margin-top: 100px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.generalPage__aram {
+    margin-top: 150px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+

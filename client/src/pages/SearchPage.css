@@ -1,0 +1,142 @@
+.loginPage {
+    background: url("https://static.vecteezy.com/system/resources/previews/001/968/664/original/abstract-dark-hexagon-pattern-on-blue-green-neon-color-background-technology-style-modern-futuristic-honeycomb-concept-you-can-use-for-cover-template-poster-banner-web-flyer-illustration-vector.jpg");
+    background-size: 1440px 720px;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.loginPage__header {
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px #000000;
+}
+
+.loginPage__title {
+    color: white; 
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 
+    0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em 0 0 rgba(0, 255, 0, 0.75),
+    0.025em 0 0 rgba(0, 0, 255, 0.75);
+}
+
+.loginPage__title span {
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+}
+
+.loginPage__title span:first-child {
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.03em, -0.015em)
+}
+
+.loginPage__title span:last-child {
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(0.03em, 0.015em)
+}
+
+.loginPage__body {
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+    margin: 0 auto;
+}
+
+.loginPage__infoBox {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    width: 50%;
+    height: 300px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+}
+
+.loginPage__backgroundBox {
+    margin-top: 60px;
+    position: relative;
+    width: 50%;
+    height: 300px;
+    background: linear-gradient(0deg, black,rgb(36, 35, 35));
+    color: white;
+}
+
+.loginPage__glow::before , .loginPage__glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff
+                                    , #ff00ff, #ff0099, #6e0dd0 , #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.loginPage__glow::after {
+    filter: blur(30px);
+}
+
+.loginPage__subtitle {
+    margin-top: -110px;
+    font-size: 1.7rem;
+}
+
+.loginPage__infoBox > form {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.loginPage__infoBox > form > input {
+    padding: 15px;
+    width: 60%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+}
+
+.loginPage__search {
+    padding: 15px;
+    width: 20%;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+    background: darkblue;
+    color: white;
+    font-weight: 700;
+}
+
+.loginPage__search:hover {
+    background:purple;
+    color:black;
+}
+

@@ -1,0 +1,48 @@
+.profilePage {
+    margin-top: 0;
+    background:black;
+}
+
+.profilePage__body {
+    margin-top: 84px;
+    z-index: 50px;
+}
+
+.profilePage__profile {
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    color: white;
+    background: linear-gradient(0deg, rgb(41, 39, 39), transparent);
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+
+.profilePage__profile:hover {
+    background: linear-gradient(0deg, rgb(122, 42, 197), transparent);
+}
+
+.profilePage__profile > img {
+    opacity: 1;
+    clip-path: circle();
+    width: 100px;
+    height: 100px;
+}
+
+.profilePage__profile > h3 {
+    opacity: 1;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.profilePage__gradient {
+    z-index: 75;
+    background: linear-gradient(0deg, rgb(0, 0, 0), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+}
+
