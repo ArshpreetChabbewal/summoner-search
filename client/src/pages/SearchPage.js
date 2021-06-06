@@ -2,21 +2,59 @@ import React from 'react'
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { setName } from '../features/accountSlice';
+import background from "../assets/images/league_background.jpeg";
+import title from "../assets/images/league_title.png";
 
 import './SearchPage.css'
+import { displaySummonerData } from '../actions/actions';
 
 function SearchPage() {
     const dispatch = useDispatch();
 
     const setSummonerName = () => {
         const accountName = document.getElementById("userInput").value;
-        dispatch(setName(accountName));
+        dispatch(displaySummonerData(accountName));
     }
 
 
     return (
         <div className="loginPage">
+             <div className="loginPage__header">
+                <h1 className="loginPage__title">Summoner Search</h1>
+             </div>
+             <img className="loginPage__background" src="https://img.particlenews.com/img/id/281r2V_0PhCdc7q00?type=thumbnail_1280x720"/>
+             <div className="loginPage__overlay"> </div>
+
+             <div className="loginPage__input">
+                <h4 className="loginPage__subtitle">Enter Your Summoner Name</h4>
+                <div className="loginPage__insert">
+                    <div className="loginPage__insertData">
+                        <input 
+                            type="text"
+                            id="userInput"
+                            required
+                            autoComplete="off"
+                        />
+                        <div className="loginPage__underline"></div>
+                        <label className="loginPage__label">Summoner Name</label>
+                    </div>
+                </div>
+                <Link to="/profile">
+                    <button 
+                        className="loginPage__search"
+                        onClick={setSummonerName}
+                    >
+                        Search
+                    </button>
+                </Link>
+             </div>
+        </div>
+    )
+}
+
+export default SearchPage
+
+{/* <div className="loginPage">
             <div className="loginPage__header">
                 <img 
                     className="logo"
@@ -48,8 +86,4 @@ function SearchPage() {
                     </form>
                 </div>
             </div>
-        </div>
-    )
-}
-
-export default SearchPage
+        </div> */}

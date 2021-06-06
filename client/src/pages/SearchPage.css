@@ -1,5 +1,156 @@
-.loginPage {
-    background: url("https://static.vecteezy.com/system/resources/previews/001/968/664/original/abstract-dark-hexagon-pattern-on-blue-green-neon-color-background-technology-style-modern-futuristic-honeycomb-concept-you-can-use-for-cover-template-poster-banner-web-flyer-illustration-vector.jpg");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.loginPage__header {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.loginPage__title {
+    margin-top: 6%;
+    width: 60%;
+    height: 40%;
+    z-index: 100;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Impact';
+    font-weight: 600;
+    color:rgb(30, 51, 170);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.loginPage__input {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.loginPage__subtitle {
+    font-size: 2.5rem;
+    margin-top: 6%;
+    font-weight: 300;
+    color: rgb(101, 0, 184);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.loginPage__insert {
+    margin-top: 5%;
+    width: 450px;
+    padding: 30px;
+}
+
+.loginPage__insert .loginPage__insertData {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.loginPage__insert .loginPage__insertData input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(162, 183, 221);
+    font-size: 17px;
+    outline: none;
+    position: absolute;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.loginPage__insertData input:focus ~ label,
+.loginPage__insertData input:valid ~ label {
+    transform: translateY(-25px);
+    font-size: 15px;
+    color: rgb(183, 140, 233);
+}
+
+label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: rgb(162, 183, 221);
+    pointer-events: none;
+    transition: all 0.3s ease; 
+}
+
+.loginPage__insert .loginPage__insertData .loginPage__underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+}
+
+.loginPage__insertData .loginPage__underline::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background:rgb(183, 140, 233);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.loginPage__insertData input:focus ~ .loginPage__underline::before,
+.loginPage__insertData input:valid ~ .loginPage__underline::before {
+    transform: scaleX(1);
+    background: rgb(183, 140, 233);
+}
+
+
+button {
+    outline: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 40px; 
+    font-size: 18px;
+    border-width: 3px;
+    border-color:rgb(4, 0, 255);
+    color:rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
+    font-family: 'Copperplate';
+    font-weight: 900;
+}
+
+.loginPage__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6
+}
+
+.loginPage__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 2, 2, 0.5);
+}
+
+
+
+
+/* .loginPage {
     background-size: 1440px 720px;
     height: 100vh;
     background-repeat: no-repeat;
@@ -138,5 +289,5 @@
 .loginPage__search:hover {
     background:purple;
     color:black;
-}
+} */
 
